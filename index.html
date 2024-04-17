@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lawyer Project 1</title>
+
+<link rel="stylesheet" href="styles/main.css" type="text/css">
+<link rel="icon" href="images/favicon.ico" type="icon">
+<script src="scripts/functions.js"></script>
+
+    
+</head>
+<body>
+<header>
+    <h1>Math Equations & String Manipulation</h1>
+</header>
+
+<main>
+    <form name="factorial">
+        <h2>Factorial Equation</h2>
+            <label for="factorialInput">Enter Number: </label>
+                <input type="number" name="txtfactorialInput" id="factorialInput" pattern="[0-9]" title="Must enter a valid positive number!"><br>
+            <label for="factorialCalculate" class="hideBtn">Calculate</label>
+                <input type="button" id="factorialCalculate" name="btnfactorialCalculate" value="Calculate" onclick="clearDataFactorial(); calculateFactorial(factorialInput.value)">
+            <label for="buttonClearDataFactorial" class="hideBtn">Clear Data</label>
+                <input type="button" id="buttonClearDataFactorial" name="btnClearData" value="Clear Data" onclick="clearDataFactorial()">
+        <p id="factorialCalculated"></p>
+    </form>
+
+        
+    <form name="calculatedMath">
+        <h2>Math Calculations</h2>
+            <h3>Click the Calculate button to begin entering numbers:</h3>
+            <label for="mathCalculationsInput" class="hideBtn">Calculate</label>
+                <input type="button" name="btnmathCalculationPrompt" id="mathCalculationsInput" value="Calculate" onclick="clearDataMath(); mathCalculations()">
+            <label for="buttonClearDataMath" class="hideBtn">Clear Data</label>
+                <input type="button" id="buttonClearDataMath" name="btnClearDataMath" value="Clear Data" onclick="clearDataMath()">
+        <p id="completedCalculations"></p>
+    </form>
+
+    <form name="manipulatedString">
+        <h2>String Manipulation</h2>
+        <h3>Click the Enter button to begin: </h3>
+            <label for="stringManipulationInput" class="hideBtn">Enter</label>
+                <input type="button" name="btnstringManipulationPrompt" id="stringManipulationInput" value="Enter" onclick="clearDataString(); stringManipulations()">
+            <label for="buttonClearDataString" class="hideBtn">Clear Data</label>
+                <input type="button" id="buttonClearDataString" name="btnClearDataString" value="Clear Data" onclick="clearDataString()">
+        <p id="stringManipulated"></p>
+    </form>
+
+        <label for="clearAllData" class="hideBtn">Clear All Data</label>
+            <input type="button" id="clearAllData" name="btnClearAllData" value="Clear All Data" onclick="clearData()">
+</main>
+<footer>
+    <p>&copy Craig Lawyer</p>
+</footer>
+</body>
+</html>

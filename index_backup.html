@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lawyer Project 1</title>
+
+<link rel="stylesheet" href="styles/main.css" type="text/css">
+<script src="scripts/functions.js"></script>
+
+    
+</head>
+<header>
+    <h1>Math Equations & String Manipulation</h1>
+</header>
+<body>
+    
+    <form name="factorial">
+        <h2>Factorial Equation</h2>
+            <label for="factorialInput">Enter Number: </label>
+                <input type="number" name="txtfactorialInput" id="factorialInput" pattern="[0-9]" title="Must enter a valid positive number!"><br>
+            <label for="factorialCalculate"></label>
+                <input type="button" id="factorialCalculate" name="btnfactorialCalculate" value="Calculate" onclick="calculateFactorial(factorialInput.value)">
+    </form>
+
+    <p id="factorialCalculatedOne"></p>
+    <p id="factorialCalculatedTwo"></p>
+        
+    <form>
+        <h2>Math Calculations</h2>
+            <label for="mathCalculationsInput">Click the Calculate button to begin entering numbers: </label><br>
+                <input type="button" name="btnmathCalculationPrompt" id="mathCalculationsInput" value="Calculate" onclick="mathCalculations()">
+    </form>
+
+    <form>
+        <h2>String Manipulation</h2>
+            <label for="stringManipulationInput">Click the Enter button to begin: </label><br>
+                <input type="button" name="btnstringManipulationPrompt" id="stringManipulationInput" value="Enter" onclick="stringManipulations()">
+    </form>
+
+</body>
+</html>

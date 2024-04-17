@@ -1,0 +1,71 @@
+/* stylsheet for index.html */
+
+html{
+    text-align: center;background-image: url(../images/math.jpg);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+}
+body
+{
+    width: 800px;
+    margin-left: 560px;
+    margin-top: 0;
+}
+h1
+{
+    color: white;
+}
+header
+{   
+    background-color: black; 
+    padding-top: 1px;
+    padding-bottom: 1px; 
+    border-radius: .5em; 
+    border: white solid 2px;
+}
+form
+{
+    width: 500px;
+    margin-left: 150px;
+    margin-top: 40px;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-radius: .5em;
+    border: black solid 5px;
+}
+footer
+{
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+}
+input[type="button"]
+{
+    margin-top: 10px;
+    border-radius: .5em;
+}
+input[type="number"]
+{
+    border-radius: .5em;
+}
+#factorialCalculated , #completedCalculations, #stringManipulated
+{
+    font-weight: bold;
+    font-style: italic;
+    color: seagreen;
+    border: seagreen solid 2px;    
+    width: 400px;
+    background-color: black;
+    margin-left: 50px;
+    border-radius: .5em;
+    font-size: 18px;   
+} 
+#clearAllData
+{
+    background-color: black;
+    color: white;
+}
+.hideBtn
+{
+    display: none;
+}
